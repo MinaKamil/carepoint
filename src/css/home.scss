@@ -1,0 +1,45 @@
+/*
+-----------------------------------
+helpers
+-----------------------------------
+*/
+@import 'scss/helpers/variables';
+@import 'scss/helpers/mixins';
+@import 'scss/helpers/functions';
+
+/*
+-----------------------------------
+Bootstrap-4
+-----------------------------------
+*/
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss.';
+/*
+-----------------------------------
+Font-Awesome
+-----------------------------------
+*/
+@import 'scss/fonts/fontawesome.scss';
+@import 'scss/fonts/solid.scss';
+@import 'scss/fonts/regular.scss';
+@import 'scss/fonts/brands.scss';
+@import 'scss/fonts/v4-shims.scss';
+
+/*
+-----------------------------------
+Component
+-----------------------------------
+*/
+@import 'scss/components/buttons';
+// @import'scss/components/headings';
+
+/*
+-----------------------------------
+pages - layout
+-----------------------------------
+*/
+@import 'scss/pages/global';
+@import 'scss/layout/header';
+@import 'scss/pages/home';
+@import 'scss/layout/footer';
