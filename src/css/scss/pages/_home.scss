@@ -1,0 +1,50 @@
+/*
+-------------------------------------
+strat choose us
+-------------------------------------
+*/
+.choose-us {
+  margin-top: 55.5px;
+
+  .choose-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    text-align: center;
+    color: $greyish-brown-three;
+  }
+
+  .choose-text {
+    font-family: OpenSans;
+    line-height: 1.88;
+    text-align: center;
+    color: $brownish-grey;
+  }
+
+  .dis-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    .icon-circle {
+      width: 55px;
+      height: 55px;
+      background-color: $water-blue;
+      color: $white;
+      text-align: center;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+
+      i {
+        line-height: 55px;
+      }
+    }
+
+    .choose-pro {
+      margin-left: 20px;
+    }
+  }
+}

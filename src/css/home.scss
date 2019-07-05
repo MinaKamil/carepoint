@@ -20,11 +20,11 @@ Bootstrap-4
 Font-Awesome
 -----------------------------------
 */
-@import 'scss/fonts/fontawesome.scss';
-@import 'scss/fonts/solid.scss';
-@import 'scss/fonts/regular.scss';
-@import 'scss/fonts/brands.scss';
-@import 'scss/fonts/v4-shims.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
 
 /*
 -----------------------------------
