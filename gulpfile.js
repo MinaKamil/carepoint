@@ -12,7 +12,7 @@ var gulp = require('gulp'),
 gulp.task('html', function () {
   return gulp.src('src/**/*.html')
     .pipe(gulp.dest('dist'))
-    .pipe(notify('HTML Task Is Done'))
+    // .pipe(notify('HTML Task Is Done'))
     .pipe(connect.reload());
 });
 // Css Task
@@ -20,26 +20,28 @@ gulp.task('css', function () {
   return gulp.src('src/css/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
-      // outputStyle: 'expanded'
-      outputStyle: 'compressed'
+      outputStyle: 'expanded'
+      // outputStyle: 'compressed'
     }))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(concat('home.min.css'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/css'))
-    .pipe(notify('Css Task Is Done'))
+    // .pipe(notify('Css Task Is Done'))
     .pipe(connect.reload());
 });
-//js task
-function js() {
-  return src('src/js/*.js', {
+// Js Task
+gulp.task('js', function () {
+  return gulp.src('src/js/*.js', {
       sourcemaps: true
     })
     .pipe(concat('main.min.js'))
-    .pipe(dest('dist/js', {
+    .pipe(gulp.dest('dist/js'), {
       sourcemaps: true
-    }))
-}
+    })
+    // .pipe(notify('JS Task Is Done'))
+    .pipe(connect.reload());
+});
 // Image.webp task
 gulp.task('img', function () {
   return gulp.src('src/img/**/*.*')
@@ -53,7 +55,7 @@ gulp.task('zip', function () {
   return gulp.src('dist/**/*.*')
     .pipe(zip('carepoint_wesite.zip'))
     .pipe(gulp.dest('.'))
-    .pipe(notify('File Is compressed'))
+  // .pipe(notify('File Is compressed'))
 });
 
 // Watch Task
@@ -64,7 +66,8 @@ gulp.task('watch', function () {
     livereload: true
   });
   gulp.watch('src/**/*.html', gulp.parallel('html'));
-  gulp.watch('src/css/**/*.*', gulp.parallel('css'));
+  gulp.watch('src/css/**/*.scss', gulp.parallel('css'));
+  gulp.watch('src/js/**/*.js', gulp.parallel('js'));
   gulp.watch('src/img/**/*.*', gulp.parallel('img'));
   gulp.watch('dist/**/*.*', gulp.parallel('zip'));
 });

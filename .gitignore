@@ -1,7 +1,15 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
 
-# Created by https://www.gitignore.io/api/compressed
-# Edit at https://www.gitignore.io/?templates=compressed
+# Created by https://www.gitignore.io/api/compressed,adobe
+# Edit at https://www.gitignore.io/?templates=compressed,adobe
+
+### Adobe ###
+# Adobe Source Files
+*.psd
+*.ai
+*.indd
+*.prproj
+*.aep
 
 ### Compressed ###
 *.7z
@@ -17,7 +25,7 @@
 *.zipx
 *.tgz
 
-# End of https://www.gitignore.io/api/compressed
+# End of https://www.gitignore.io/api/compressed,adobe
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 

@@ -9,6 +9,8 @@
   "devDependencies": {
     "bootstrap": "^4.3.1",
     "bootstrap-scss": "^4.3.1",
+    "eslint": "^6.0.1",
+    "exports-loader": "^0.7.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-concat": "^2.6.1",
@@ -33,5 +35,9 @@
   "bugs": {
     "url": "https://github.com/mbottros/carepoint/issues"
   },
-  "homepage": "https://github.com/mbottros/carepoint#readme"
+  "homepage": "https://github.com/mbottros/carepoint#readme",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
 }

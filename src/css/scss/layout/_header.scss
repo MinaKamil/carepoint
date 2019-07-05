@@ -1,0 +1,125 @@
+/*
+-------------------------
+start top Header
+------------------------
+*/
+.top-header {
+  margin-top: 30px;
+
+  .media {
+    .circle-icon {
+      width: 26px;
+      height: 26px;
+      text-align: center;
+      background-color: $water-blue;
+      color: $white;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+
+      i {
+        font-size: 16px;
+      }
+    }
+
+    .media-body {
+
+      h5,
+      p {
+        font-family: OpenSans;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.47;
+        letter-spacing: normal;
+        color: $brownish-grey
+      }
+    }
+  }
+}
+
+/*
+----------------------------------
+start navbar header
+----------------------------------
+*/
+.navbar-header {
+  .navbar-nav {
+    margin-top: 0;
+    padding-top: 0;
+
+    .nav-item {
+      color: $brownish-grey-two;
+    }
+
+    .active {
+      color: $black
+    }
+  }
+
+  .social-media {
+    margin-top: 14px;
+
+    .nav-item {
+      padding-right: 10px;
+
+      a {
+        color: $black-two;
+      }
+    }
+  }
+}
+
+
+
+/*
+----------------------------------
+start banner-img
+----------------------------------
+*/
+.banner-img {
+  .card {
+    .card-img-overlay {
+      top: 25%;
+      right: 30%;
+      color: $greyish-brown;
+      text-align: center;
+
+      .card-title {
+        // width: 262px;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: -0.6px;
+      }
+
+      .card-text {
+        // width: 210px;
+        font-family: OpenSans;
+        font-size: 20px;
+        line-height: 1.76;
+        color: $greyish-brown-two;
+      }
+
+      a {
+        border-radius: 7.5px;
+        box-shadow: -1.8px 5.7px 20px 0 rgba(0, 1, 1, 0.2);
+        background-color: $water-blue;
+        font-family: Lato;
+        font-weight: bold;
+        letter-spacing: 0.23px;
+        text-align: center;
+        outline: none;
+        border: 0;
+      }
+    }
+  }
+}
+
+/*
+----------------------------------
+----------------------------------
+*/
