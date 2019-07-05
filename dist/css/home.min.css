@@ -23514,6 +23514,17 @@ Component
 pages - layout
 -----------------------------------
 */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 4000px;
+}
+
 /*
 -------------------------
 start top Header
@@ -23526,9 +23537,9 @@ start top Header
 .top-header .media .circle-icon {
   width: 26px;
   height: 26px;
-  text-align: center;
   background-color: #1a9bdc;
   color: #fff;
+  text-align: center;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -23537,7 +23548,9 @@ start top Header
 }
 
 .top-header .media .circle-icon i {
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
 }
 
 .top-header .media .media-body h5,
@@ -23619,12 +23632,65 @@ start banner-img
   text-align: center;
   outline: none;
   border: 0;
+  -webkit-border-radius: 7.5px;
+  -moz-border-radius: 7.5px;
+  -ms-border-radius: 7.5px;
+  -o-border-radius: 7.5px;
 }
 
 /*
 ----------------------------------
+start services header
 ----------------------------------
 */
+.services {
+  color: #ffffff;
+}
+
+.services .card {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  border: 0;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.services .card .icon-services {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #262626;
+  margin: 0 auto;
+}
+
+.services .card .icon-services i {
+  text-align: center;
+  line-height: 50px;
+}
+
+.services .card:first-of-type {
+  background-color: #43b1d2;
+}
+
+.services .card:nth-of-type(2) {
+  background-color: #3fb6c6;
+}
+
+.services .card:nth-of-type(3) {
+  background-color: #3cbbbb;
+}
+
+.services .card:last-of-type {
+  background-color: #37c3a8;
+}
 
 /*!
  * Font Awesome Free 5.9.0 by @fontawesome - https://fontawesome.com
