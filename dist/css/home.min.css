@@ -13222,10 +13222,6 @@ pages - layout
   padding: 0;
 }
 
-body {
-  height: 10000px;
-}
-
 .gallary .overlay-gallary {
   position: absolute;
   left: 0;
@@ -13243,7 +13239,7 @@ body {
   -o-border-radius: 50%;
 }
 
-.choose-us .section-3 .btn-choose-us button, .offer .btn-offer {
+.choose-us .section-3 .btn-choose-us button, .offer .btn-offer, .footer .btn-footer {
   background-color: #0087be;
   -webkit-box-shadow: -3.508px 11.476px 40px 0px rgba(0, 1, 1, 0.2);
   box-shadow: -3.508px 11.476px 40px 0px rgba(0, 1, 1, 0.2);
@@ -13255,6 +13251,7 @@ body {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  padding: 5px 30px;
 }
 
 /*
@@ -13692,8 +13689,8 @@ Start footer
 -------------------------------------
 */
 .footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   background-color: #171717;
   color: #fff;
 }
@@ -13720,9 +13717,65 @@ Start footer
   color: rgba(255, 255, 255, 0.51);
 }
 
+.footer .links li {
+  margin-bottom: 18px;
+}
+
+.footer .links li::before {
+  content: "\f0da";
+  font-family: "FontAwesome";
+  color: #1a9bdc;
+  margin-right: 20px;
+}
+
+.footer .links li a {
+  color: rgba(255, 255, 255, 0.51);
+  opacity: 0.51;
+  font-family: OpenSans;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+}
+
+.footer input[type=text],
+.footer input[type=tel],
+.footer textarea {
+  border: 0;
+  border-bottom: 1px solid #000;
+  background-color: transparent;
+  margin-bottom: 15px;
+  width: 100%;
+  opacity: 0.51;
+  color: rgba(255, 255, 255, 0.51);
+}
+
 /*
 -------------------------------------
 End footer
+-------------------------------------
+*/
+/*
+-------------------------------------
+Start Copy-right
+-------------------------------------
+*/
+.copy-right {
+  background-color: #1a1a1a;
+  padding: 40px 0;
+}
+
+.copy-right .copy-right-text {
+  margin-bottom: 0;
+  font-size: 13px;
+  font-family: OpenSans;
+  line-height: 1.85;
+  letter-spacing: 0.16px;
+  text-align: center;
+  color: #615555;
+}
+
+/*
+-------------------------------------
+End copy-right
 -------------------------------------
 */
 

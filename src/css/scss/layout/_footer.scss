@@ -4,8 +4,8 @@ Start footer
 -------------------------------------
 */
 .footer {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 50px;
   background-color: $black-three;
   color: $white;
 
@@ -30,10 +30,73 @@ Start footer
     letter-spacing: 0.2px;
     color: rgba(255, 255, 255, 0.51);
   }
+
+  .links {
+
+    li {
+      margin-bottom: 18px;
+
+      &::before {
+        content: "\f0da";
+        font-family: "FontAwesome";
+        color: $water-blue;
+        margin-right: 20px;
+      }
+
+      a {
+        color: $white-51;
+        opacity: 0.51;
+        font-family: OpenSans;
+        letter-spacing: 0.2px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  input[type=text],
+  input[type=tel],
+  textarea {
+    border: 0;
+    border-bottom: 1px solid #000;
+    background-color: transparent;
+    margin-bottom: 15px;
+    width: 100%;
+    opacity: 0.51;
+    color: $white-51;
+  }
+
+  .btn-footer {
+    @extend %btn-main;
+  }
 }
 
 /*
 -------------------------------------
 End footer
+-------------------------------------
+*/
+/*
+-------------------------------------
+Start Copy-right
+-------------------------------------
+*/
+.copy-right {
+  background-color: $black-four;
+  padding: 40px 0;
+
+  .copy-right-text {
+    margin-bottom: 0;
+    font-size: 13px;
+    font-family: OpenSans;
+    line-height: 1.85;
+    letter-spacing: 0.16px;
+    text-align: center;
+    color: $greyish-brown-four;
+  }
+}
+
+/*
+-------------------------------------
+End copy-right
 -------------------------------------
 */
