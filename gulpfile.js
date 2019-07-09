@@ -20,8 +20,8 @@ gulp.task('css', function () {
   return gulp.src('src/css/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
-      outputStyle: 'expanded',
-      // outputStyle: 'compressed'
+      // outputStyle: 'expanded',
+      outputStyle: 'compressed'
     }))
     // .pipe(autoprefixer('last 2 versions'))
     .pipe(concat('home.min.css'))
