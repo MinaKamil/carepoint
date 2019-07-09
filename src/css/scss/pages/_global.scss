@@ -5,5 +5,36 @@
 }
 
 body {
-  height: 4000px;
+  height: 10000px;
+}
+
+%overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1.25rem;
+}
+
+%circle {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+%btn-main {
+  background-color: $cerulean;
+  -webkit-box-shadow: -3.508px 11.476px 40px 0px rgba(0, 1, 1, 0.2);
+  box-shadow: -3.508px 11.476px 40px 0px rgba(0, 1, 1, 0.2);
+  color: $white;
+  text-transform: uppercase;
+  border-radius: 20px;
+  font-weight: 500;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }

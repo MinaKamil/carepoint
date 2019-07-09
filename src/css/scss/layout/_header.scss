@@ -8,16 +8,12 @@ start top Header
 
   .media {
     .circle-icon {
+      @extend %circle;
       width: 26px;
       height: 26px;
       background-color: $water-blue;
       color: $white;
       text-align: center;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
 
       i {
         font-size: 15px;
@@ -116,10 +112,6 @@ start banner-img
         text-align: center;
         outline: none;
         border: 0;
-        -webkit-border-radius: 7.5px;
-        -moz-border-radius: 7.5px;
-        -ms-border-radius: 7.5px;
-        -o-border-radius: 7.5px;
       }
     }
   }
@@ -144,11 +136,7 @@ start services header
     -o-border-radius: 0;
 
     .icon-services {
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
+      @extend %circle;
       width: 50px;
       height: 50px;
       background-color: $white;

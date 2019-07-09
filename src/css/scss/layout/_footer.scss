@@ -1,0 +1,39 @@
+/*
+-------------------------------------
+Start footer
+-------------------------------------
+*/
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $black-three;
+  color: $white;
+
+  .footer-title {
+    font-size: 22px;
+    font-family: "OpenSans";
+    font-weight: bold;
+    line-height: 1.091;
+    padding-bottom: 60px;
+  }
+
+  i {
+    color: rgba(255, 255, 255, 0.51);
+  }
+
+  p {
+    margin-bottom: 0;
+    opacity: 0.51;
+    font-family: OpenSans;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 0.51);
+  }
+}
+
+/*
+-------------------------------------
+End footer
+-------------------------------------
+*/

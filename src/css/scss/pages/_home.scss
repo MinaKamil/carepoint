@@ -20,31 +20,279 @@ strat choose us
     color: $brownish-grey;
   }
 
-  .dis-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
+  .img-top {
+    margin-top: 130px;
 
-    .icon-circle {
-      width: 55px;
-      height: 55px;
+    .dis-flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+
+      .icon-circle {
+        width: 55px;
+        height: 55px;
+        background-color: $water-blue;
+        color: $white;
+        text-align: center;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+
+        i {
+          line-height: 55px;
+        }
+      }
+
+      .choose-pro {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .section-2 {
+    .card-img-overlay {
       background-color: $water-blue;
-      color: $white;
-      text-align: center;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
+      opacity: 0.8;
 
-      i {
-        line-height: 55px;
+      .back-top {
+        margin-top: 50%;
+
+        .card-title {
+          font-family: Montserrat;
+          font-weight: bold;
+          letter-spacing: -0.75px;
+          text-align: center;
+        }
+
+        hr {
+          margin: 0 auto 15px;
+          width: 42px;
+          background-color: $white;
+          height: 4px;
+        }
+
+        .card-text {
+          font-family: Montserrat;
+          font-weight: bold;
+          font-style: normal;
+          letter-spacing: -0.31px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .section-3 {
+    .card {
+      border: 0;
+
+      .card-body {
+        padding-right: 0;
+        padding-left: 0;
+
+        .card-title {
+          color: $medium-grey;
+        }
+
+        .card-text {
+          color: $brownish-grey;
+
+          small {
+            color: $cerulean;
+            font-weight: bold;
+            letter-spacing: -0.19px;
+          }
+        }
       }
     }
 
-    .choose-pro {
-      margin-left: 20px;
+    .btn-choose-us {
+      text-align: center;
+      margin-top: 50px;
+
+      button {
+        @extend %btn-main;
+      }
+    }
+
+    .accordion {
+      .card-header {
+        //  margin-bottom: 20px;
+        padding: 0;
+        background-color: transparent;
+        border: 0;
+
+        .btn-link {
+          width: 100%;
+          text-decoration: none;
+          background-color: #e2e2e2;
+          color: $greyish-brown-three;
+          text-align: left;
+          font-size: 20px;
+          padding: 0.75rem .7rem;
+
+          &:not(.collapsed) {
+            background-color: $cerulean;
+            color: $white;
+          }
+        }
+      }
     }
   }
 }
+
+/*
+-------------------------------------
+End choose us
+-------------------------------------
+*/
+/*
+-------------------------------------
+Start gallary
+-------------------------------------
+*/
+
+.gallary {
+  background-image: url('../img/gallary_bg.webp');
+  // opacity: 0.212;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  z-index: 88;
+  margin-top: 100px;
+
+  .overlay-gallary {
+    @extend %overlay;
+    background-color: rgba(56, 182, 158, 0.8705882352941177);
+    z-index: 87;
+
+    .gallary-title {
+      color: $white;
+      padding-top: 50px;
+    }
+
+    .gallary-text {
+      font-family: "OpenSans";
+      color: $white;
+      font-size: 16px;
+      margin-top: 20px;
+      line-height: 1.875;
+    }
+
+  }
+}
+
+/*
+-------------------------------------
+End gallary
+-------------------------------------
+*/
+/*
+-------------------------------------
+Start Our team
+-------------------------------------
+*/
+.our-team {
+  margin-top: 50px;
+
+  .our-team-title {
+    font-size: 109px;
+    font-family: "Montserrat";
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 0;
+    -moz-transform: matrix(0.41209574560932, 0, 0, 0.41209574560932, 0, 0);
+    -webkit-transform: matrix(0.41209574560932, 0, 0, 0.41209574560932, 0, 0);
+    -ms-transform: matrix(0.41209574560932, 0, 0, 0.41209574560932, 0, 0);
+    transform: matrix(0.41209574560932, 0, 0, 0.41209574560932, 0, 0);
+    -o-transform: matrix(0.41209574560932, 0, 0, 0.41209574560932, 0, 0);
+  }
+
+  .our-team-text {
+    font-size: 16px;
+    font-family: "Myriad Pro";
+    color: rgb(106, 106, 106);
+    line-height: 1.875;
+    text-align: center;
+  }
+
+  .our-team-circle {
+    @extend %circle;
+    width: 200px;
+    height: 200px;
+  }
+
+  .title {
+    font-family: "Myriad Pro";
+    color: rgb(111, 111, 110);
+    line-height: 1.2;
+    margin-top: 10px;
+  }
+
+  .text {
+    margin-top: 10px;
+    font-family: "Myriad Pro";
+    color: rgb(111, 111, 110);
+    line-height: 1.2;
+  }
+
+  .list-inline {
+    .list-inline-item {
+      a {
+        color: $cerulean;
+      }
+    }
+  }
+}
+
+/*
+-------------------------------------
+End Our Team
+-------------------------------------
+*/
+/*
+-------------------------------------
+Start offer
+-------------------------------------
+*/
+.offer {
+  margin-top: 50px;
+  padding: 30px 0;
+  background-color: rgb(226, 226, 226);
+  text-align: center;
+
+  .text {
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: $greyish-brown-three;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 5px;
+  }
+
+  .btn-offer {
+    @extend %btn-main;
+    margin-top: 5px;
+  }
+}
+
+/*
+-------------------------------------
+End offer
+-------------------------------------
+*/
