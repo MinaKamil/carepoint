@@ -4,9 +4,13 @@ start top Header
 ------------------------
 */
 .top-header {
-  margin-top: 30px;
+
+  @media #{$min-medium} {
+    margin-top: 30px;
+  }
 
   .media {
+
     .circle-icon {
       @extend %circle;
       width: 26px;
@@ -56,14 +60,25 @@ start navbar header
     .active {
       color: $black
     }
+
+  }
+
+  .navbar-toggler {
+    outline: none;
   }
 
   .social-media {
-    margin-top: 14px;
+    @media #{$min-medium} {
+      margin-top: 16px;
+      text-align: right;
+    }
 
-    .nav-item {
-      padding-right: 10px;
+    @media #{$max-small} {
+      text-align: right;
+      margin-top: 15px;
+    }
 
+    .list-inline-item {
       a {
         color: $black-two;
       }
@@ -79,27 +94,59 @@ start banner-img
 ----------------------------------
 */
 .banner-img {
+  position: relative;
+
   .card {
+    img {
+      @media #{$max-mobile} {
+        height: 200px;
+      }
+    }
+
     .card-img-overlay {
-      top: 25%;
-      right: 30%;
-      color: $greyish-brown;
-      text-align: center;
+      @media #{$min-small} {
+        top: 25%;
+        right: 30%;
+        text-align: center;
+        color: $greyish-brown;
+      }
+
+      @media #{$max-small} {
+        top: 10%;
+      }
+
+      @media #{$max-mobile} {
+        top: 0;
+        right: 0;
+        color: $greyish-brown;
+        text-align: center;
+      }
 
       .card-title {
-        // width: 262px;
-        font-family: Montserrat;
-        font-size: 40px;
-        font-weight: bold;
-        letter-spacing: -0.6px;
+
+        @media #{$min-small} {
+          font-family: Montserrat;
+          font-size: 40px;
+          font-weight: bold;
+          letter-spacing: -0.6px;
+        }
+
+        @media #{$max-mobile} {
+          font-size: 20px;
+        }
       }
 
       .card-text {
-        // width: 210px;
-        font-family: OpenSans;
-        font-size: 20px;
-        line-height: 1.76;
-        color: $greyish-brown-two;
+        @media #{$min-small} {
+          font-family: OpenSans;
+          font-size: 20px;
+          line-height: 1.76;
+          color: $greyish-brown-two;
+        }
+
+        @media #{$max-mobile} {
+          font-size: 13px;
+        }
       }
 
       a {
@@ -112,6 +159,14 @@ start banner-img
         text-align: center;
         outline: none;
         border: 0;
+        -webkit-border-radius: 7.5px;
+        -moz-border-radius: 7.5px;
+        -ms-border-radius: 7.5px;
+        -o-border-radius: 7.5px;
+
+        @media #{$max-mobile} {
+          font-size: 12px;
+        }
       }
     }
   }
@@ -125,44 +180,49 @@ start services header
 .services {
   color: #ffffff;
 
-  .card {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    border: 0;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+  .row {
+    .col-12 {
+      &:first-of-type {
+        background-color: $dark-sky-blue;
+      }
 
-    .icon-services {
-      @extend %circle;
-      width: 50px;
-      height: 50px;
-      background-color: $white;
-      color: $black;
-      margin: 0 auto;
+      &:nth-of-type(2) {
+        background-color: $greeny-blue;
+      }
 
-      i {
-        text-align: center;
-        line-height: 50px;
+      &:nth-of-type(3) {
+        background-color: $greeny-blue-two;
+      }
+
+      &:last-of-type {
+        background-color: $greenish-teal;
+      }
+
+      .card {
+        background-color: transparent;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        border: 0;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+
+        .icon-services {
+          @extend %circle;
+          width: 50px;
+          height: 50px;
+          background-color: $white;
+          color: $black;
+          margin: 0 auto;
+
+          i {
+            text-align: center;
+            line-height: 50px;
+          }
+        }
       }
     }
-  }
-
-  .card:first-of-type {
-    background-color: $dark-sky-blue;
-  }
-
-  .card:nth-of-type(2) {
-    background-color: $greeny-blue;
-  }
-
-  .card:nth-of-type(3) {
-    background-color: $greeny-blue-two;
-  }
-
-  .card:last-of-type {
-    background-color: $greenish-teal;
   }
 }
