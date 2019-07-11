@@ -1,3 +1,4 @@
+AOS.init();
 var btnScroll = document.getElementById('btn-scroll');
 window.onscroll = function () {
   if (window.pageYOffset >= 20) {

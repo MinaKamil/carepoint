@@ -117,6 +117,7 @@ Start Top Page
   font-weight: bold;
   font-size: 20px;
   color: $medium-grey;
+  scroll-behavior: smooth;
 
   &:hover {
     text-decoration: none;
