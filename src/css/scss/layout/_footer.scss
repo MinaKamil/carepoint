@@ -108,8 +108,20 @@ Start Top Page
 .btn-scroll {
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  right: 20px;
   display: none;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  -webkit-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+  font-weight: bold;
+  font-size: 20px;
+  color: $medium-grey;
+
+  &:hover {
+    text-decoration: none;
+    color: $medium-grey
+  }
 }
 
 /*
