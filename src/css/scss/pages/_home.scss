@@ -74,12 +74,22 @@ strat choose us
   }
 
   .section-2 {
+    img {
+      height: 500px;
+    }
+
     .card-img-overlay {
       background-color: $water-blue;
       opacity: 0.8;
 
       .back-top {
-        margin-top: 50%;
+        @media #{$min-medium} {
+          margin-top: 50%;
+        }
+
+        @media #{$max-small} {
+          margin-top: 33px;
+        }
 
         .card-title {
           font-family: Montserrat;
@@ -178,32 +188,39 @@ Start gallary
 
 .gallary {
   background-image: url('../img/gallary_bg.webp');
-  // opacity: 0.212;
   position: relative;
   background-size: cover;
-  width: 100%;
-  height: 800px;
-  z-index: 88;
   margin-top: 100px;
 
-  .overlay-gallary {
-    @extend %overlay;
-    background-color: rgba(56, 182, 158, 0.8705882352941177);
+  @media #{$min-small} {
+    height: 500px;
+  }
+
+  @media #{$max-mobile} {
+    height: 400px;
+  }
+
+  .card-img-overlay {
+    background-color: rgba(56, 182, 158, 0.8);
     z-index: 87;
+    padding: 0;
 
-    .gallary-title {
-      color: $white;
-      padding-top: 50px;
+    .card-back {
+      background-color: transparent;
+
+      .gallary-title {
+        color: $white;
+        padding-top: 50px;
+      }
+
+      .gallary-text {
+        font-family: "OpenSans";
+        color: $white;
+        font-size: 16px;
+        margin-top: 20px;
+        line-height: 1.875;
+      }
     }
-
-    .gallary-text {
-      font-family: "OpenSans";
-      color: $white;
-      font-size: 16px;
-      margin-top: 20px;
-      line-height: 1.875;
-    }
-
   }
 }
 
@@ -221,18 +238,13 @@ Start Our team
   margin-top: 50px;
 
   .our-team-title {
-    font-size: 109px;
+    font-size: 50px;
     font-family: "Montserrat";
     color: rgb(73, 73, 73);
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 0;
-    -moz-transform: matrix(0.41209574560932, 0, 0, 0.41209574560932, 0, 0);
-    -webkit-transform: matrix(0.41209574560932, 0, 0, 0.41209574560932, 0, 0);
-    -ms-transform: matrix(0.41209574560932, 0, 0, 0.41209574560932, 0, 0);
-    transform: matrix(0.41209574560932, 0, 0, 0.41209574560932, 0, 0);
-    -o-transform: matrix(0.41209574560932, 0, 0, 0.41209574560932, 0, 0);
+    margin-bottom: 10px;
   }
 
   .our-team-text {
