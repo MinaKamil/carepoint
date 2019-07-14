@@ -6,6 +6,14 @@ helpers
 @import 'scss/helpers/variables';
 @import 'scss/helpers/mixins';
 @import 'scss/helpers/functions';
+
+/*
+-----------------------------------
+Aos Animation
+-----------------------------------
+*/
+$aos-distance: 0;
+@import 'node_modules/aos/src/sass/aos.scss';
 /*
 -----------------------------------
 Bootstrap-4
@@ -30,7 +38,7 @@ Font-Awesome
 Component
 -----------------------------------
 */
-@import 'scss/components/buttons';
+// @import 'scss/components/buttons';
 // @import'scss/components/headings';
 
 /*

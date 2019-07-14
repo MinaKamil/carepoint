@@ -1,7 +1,7 @@
 AOS.init();
 var btnScroll = document.getElementById('btn-scroll');
 window.onscroll = function () {
-  if (window.pageYOffset >= 20) {
+  if (window.pageYOffset >= 100) {
     btnScroll.style.display = 'block';
   } else {
     btnScroll.style.display = 'none';
