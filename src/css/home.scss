@@ -12,7 +12,8 @@ helpers
 Aos Animation
 -----------------------------------
 */
-$aos-distance: 0;
+$aos-distance: -1;
+
 @import 'node_modules/aos/src/sass/aos.scss';
 /*
 -----------------------------------
